@@ -5,6 +5,7 @@ const Response = require('../response/response');
 
 module.exports = {
 
+//     get the base url
     getBaseUrl: (req, res, next)=>{
         res.status(200).json({
             Error: false,
