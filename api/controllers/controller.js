@@ -69,6 +69,8 @@ module.exports = {
             .error_res(err, 500)
         });
     },
+    
+//     get product
     getProduct: (req, res, next)=>{
         Product.findById(req.params.id)
         .select('_id name price product_image created_at')
