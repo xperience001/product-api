@@ -39,6 +39,8 @@ module.exports = {
             .error_res(err, 400);
         });
     },
+    
+//     create product
     createProduct:  (req, res, next)=>{
         const product = new Product({
             name: req.body.name,
