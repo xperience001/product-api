@@ -13,6 +13,7 @@ module.exports = {
         });
     },
 
+//     get all products
     getAllProducts: (req, res, next)=>{
         Product.find({})
         .select('name price _id product_image created_at')
